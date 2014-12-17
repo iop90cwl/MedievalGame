@@ -25,6 +25,7 @@ if direction == '1':
     if choice == '1' and fight == '2':
         print('\nUnfortunately, your sword cannot stop his arrows, and you are slain.')
         win = '0'
+        halfwin = '0'
     elif choice == '1' and fight == '1':
         print('\nYou narrowly escape with your life and live to tell the tale to your malnourished children.')
         win = '0'
@@ -32,6 +33,7 @@ if direction == '1':
     elif choice == '2' and fight == '2':
         print('\nYour shield stops his arrows, and you raid his fortress. You retire comfortably with pounds and pounds of gold.')
         win = '0'
+        halfwin = '0'
     elif choice == '2' and fight == '1':
         print('\nYou run away, but you always wonder what would\'ve happened if you\'d\'ve stayed and fought.')
         win = '1'
@@ -46,6 +48,7 @@ if direction == '2':
     if choice == '1' and defend == '1':
         print('\nYou sink your sword into the Ogre and defeat him. You take all the gold from his lair and spend the rest of your days in luxury.')
         win = '1'
+        halfwin = '0'
     elif choice == '1' and defend == '2':
         print('\nYou escape, but for the rest of your life you ponder what might have happened if you had fought and won.')
         win = '0'
@@ -53,6 +56,7 @@ if direction == '2':
     elif choice == '2' and defend == '1':
         print('\nYour shield is no match for the Ogre, and he bashes your head in.')
         win = '0'
+        halfwn = '0'
     elif choice == '2' and defend == '2':
         print('\nYou barely escape, and come home emptyhanded, but alive.')
         win = '1'
@@ -63,7 +67,7 @@ if direction == '2':
 #Win/Lose
 if win == '1' and halfwin != '1':
     print('\nCongratulations! You won,', playername)
-    input('\nPress any key to quit.')
+    input('\nPress ENTER to quit.')
 elif win == '0' and halfwin != '1':
     print('\nRest in Peace,', playername)
     input('\nPress ENTER to quit.')
