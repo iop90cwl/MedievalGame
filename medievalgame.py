@@ -1,10 +1,10 @@
 print('Hello, and Welcome to "Quest for Gold"!')
-playername = input('What is your name?: ')
-print('You are ', playername,', a valiant and noble warrior, and you begin your quest for riches!\n')
+playername = input('What is your name?:')
+print('',playername,'!' ' You are known through the land as a valiant and noble warrior, and you begin your quest for riches!\n')
 print('Do you choose a Sword or a Shield? Enter 1 for a Sword and 2 for a Shield.')
 
 #Choice Input
-choice = input('Which will it be: ')
+choice = input('Which will it be? ')
 
 if choice == '1':
     print('\nYou chose a Sword.')
