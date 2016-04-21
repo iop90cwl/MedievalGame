@@ -1,9 +1,12 @@
+#Run in Python 3
+
 print('Hello, and Welcome to "Quest for Gold"!')
 playername = input('What is your name?: ')
 print('',playername,'!' ' You are known through the land as a valiant and noble warrior, and you begin your quest for riches!\n')
 print('Do you choose a Sword or a Shield? Enter 1 for a Sword and 2 for a Shield.')
 
 #Choice Input
+
 choice = input('Which will it be? ')
 
 if choice == '1':
@@ -16,12 +19,14 @@ else:
     print('Invalid. Restart the game.')
 
 #Story Branch
+
 direction = input('\nYou set out on your adventure. You come accross a fork in the path. Do you go left or right? 1 for left, 2 for right: ')
 
 #First Path
+
 if direction == '1':
     print('\nYou come accross a bowman!')
-    fight = input('\nDo you run away(enter 1) or stay and fight?(enter 2).')
+    fight = input('\nDo you run away(enter 1) or stay and fight?(enter 2). ')
     if choice == '1' and fight == '2':
         print('\nUnfortunately, your sword cannot stop his arrows, and you are slain.')
         win = '0'
@@ -42,9 +47,10 @@ if direction == '1':
         print('\nYou messed up. Restart the game.')
         
 #Second Path
+
 if direction == '2':
     print('\nYou come accross an Ogre!')
-    defend = input('Do you fight(enter 1) or defend yourself?(enter 2).')
+    defend = input('Do you fight(enter 1) or defend yourself?(enter 2). ')
     if choice == '1' and defend == '1':
         print('\nYou sink your sword into the Ogre and defeat him. You take all the gold from his lair and spend the rest of your days in luxury.')
         win = '1'
@@ -65,6 +71,7 @@ if direction == '2':
         print('\nYou dun\' goofed! Restart the game.')
 
 #Win/Lose
+
 if win == '1' and halfwin != '1':
     print('\nCongratulations! You won,', playername)
     input('\nPress ENTER to quit.')
