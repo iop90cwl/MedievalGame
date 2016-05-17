@@ -62,7 +62,7 @@ if direction == '2':
     elif choice == '2' and defend == '1':
         print('\nYour shield is no match for the Ogre, and he bashes your head in.')
         win = '0'
-        halfwn = '0'
+        halfwin = '0'
     elif choice == '2' and defend == '2':
         print('\nYou barely escape, and come home emptyhanded, but alive.')
         win = '1'
@@ -78,6 +78,11 @@ if win == '1' and halfwin != '1':
 elif win == '0' and halfwin != '1':
     print('\nRest in Peace,', playername)
     input('\nPress ENTER to quit.')
-elif halfwin == '1':
-    print('Congrats,', playername,', you won, kind of.')
+elif win == '1' and halfwin == '1':
+    print('\nCongrats,', playername,', you won, kind of.')
     input('\nPress ENTER to quit.')
+elif halfwin == '1':
+    print('\nCongrats,', playername,', you won, kind of.')
+    input('\nPress ENTER to quit.')
+else:
+    print('\nSomething went wrong. Sorry. This code is not very well made...')
